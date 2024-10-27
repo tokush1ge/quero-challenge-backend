@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar Projeto C++",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/main.cpp",
+                "${workspaceFolder}/implementations.cpp",
+                "-o",
+                "${workspaceFolder}/app"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compilando múltiplos arquivos em C++"
+        }
+    ]
+}
